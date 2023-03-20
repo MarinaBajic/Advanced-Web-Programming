@@ -1,0 +1,31 @@
+Paris
+Starting from $1000
+Paris is known as the "City of Light" and is one of the most romantic cities in the world. 
+It is home to iconic landmarks such as the Eiffel Tower, the Louvre Museum, and Notre Dame Cathedral. 
+Visitors can indulge in the city's famous cuisine, explore the charming neighborhoods, and stroll along the banks of the Seine River.
+
+Barselona
+Starting from $1200
+Barcelona is a vibrant city with a rich history and culture. It is home to the famous architect Antoni Gaudí's masterpieces, 
+such as the Park Güell and the Sagrada Familia. Visitors can also enjoy the city's stunning beaches, delicious cuisine, and lively nightlife.
+
+Amsterdam
+Starting from $800
+Amsterdam is a vibrant city that offers a unique blend of history, culture, and liberal attitudes. Its world-class museums, 
+picturesque canals, charming neighborhoods, and outdoor activities make it a popular destination for visitors.
+
+Venice
+Starting from $1400
+Venice is a city unlike any other, built entirely on water. It is famous for its romantic gondola rides along the canals, stunning architecture, 
+and delicious cuisine. Visitors can explore the city's many historic landmarks, such as St. Mark's Basilica and the Doge's Palace.
+
+Berlin
+Starting from $900
+Berlin is a city with a fascinating history and a vibrant cultural scene. It is home to many historic landmarks, such as the Brandenburg Gate and the Berlin Wall, 
+as well as numerous museums and galleries. Visitors can also enjoy the city's lively nightlife and delicious street food.
+
+Prague
+Starting from $700
+Prague is a charming and picturesque city that offers visitors a blend of history, culture, and modernity. 
+With its stunning architecture, vibrant nightlife, and delicious cuisine, it's easy to see why it's a favorite among travelers.
+From exploring the Prague Castle to indulging in the city's famous beer, Prague has something for everyone.
