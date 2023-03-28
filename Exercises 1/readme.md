@@ -1,4 +1,4 @@
-## Exetcises 1 - CSS, Flexbox
+## Exercises 1 - CSS, Flexbox
 
 This exercises consists of two small projects:
 <ol>
