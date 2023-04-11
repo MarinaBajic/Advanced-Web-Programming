@@ -22,6 +22,17 @@ This exercises consists of two small projects:
     <li> Restaurant - A simple restaurant website, which demonstrates use of bootstrap components, like navbars, cards, carousels, etc.</li>
 </ol>
 
+### Exercises 3 - Javascript and Typescript
+
+You can find implementation from exercises in the directories `Exercises 3/JS` and `Exercises 3/TS`.
+Setup instructions for installing and running typescript can be found in the file `Exercises 3/typescript_setup.md`.
+
+<ol>
+    <li> JS - Javascript implementation of very simple to-do app</li>
+    <li> TS - Various typescript examples (types, functions, classes, interfaces, modules)</li>
+</ol>
+
+
 ## Contact
 For any questions, please contact me at: <dejan.gjer@dmi.uns.ac.rs>
 
