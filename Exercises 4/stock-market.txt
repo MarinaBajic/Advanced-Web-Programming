@@ -1,0 +1,4 @@
+We will create a very simple stock market application, which allows us to see a list
+of stocks, each with its own name, stock code, and price. While working on this project
+we will see how to package rendering a stock into an individual, reusable
+component, and how to work with Angular event and data binding.

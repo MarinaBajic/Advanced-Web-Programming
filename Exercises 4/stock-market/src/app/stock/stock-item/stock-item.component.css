@@ -1,0 +1,19 @@
+.stock-item-container {
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 5px;
+    display: inline-block;
+    padding: 10px;
+}
+
+.positive {
+    color: green;;
+}
+
+.negative {
+    color: red;
+}
+
+button {
+    margin: 10px;
+}
