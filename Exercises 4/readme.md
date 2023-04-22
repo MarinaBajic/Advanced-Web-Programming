@@ -7,7 +7,8 @@ In this exercise we implemented a simple stock market application and demonstrat
 
 ### Stock Market Application
 
-In this application we represented stock item as a component which consists of name, code (abbreviated name), price and prevoius price.
+In this application we represented stock item as a component which consists of name, code (abbreviated name), price and previous price.
+- Create class stock to store all necessary information about the stock.
 - If previous price is greater than current price, the price is displayed in red color, otherwise it is displayed in green color.
 - Stock item also has a button to add that stock to favorites. If the stock is already in favorites, the button should be disabled.
 - Print the price using currency pipe.
