@@ -32,6 +32,12 @@ Setup instructions for installing and running typescript can be found in the fil
     <li> TS - Various typescript examples (types, functions, classes, interfaces, modules)</li>
 </ol>
 
+### Exercises 4 - Angular Components
+
+You can find implementation from exercises in the directory `Exercises 4/stock-market`.
+Setup instructions for installing and running angular can be found in the file `Exercises 4/angular_setup.md`.
+
+In this exercise we implemented a simple stock market application and demonstrated the use of components, data binding (text interpolation and property binding), event binding and pipes.
 
 ## Contact
 For any questions, please contact me at: <dejan.gjer@dmi.uns.ac.rs>
