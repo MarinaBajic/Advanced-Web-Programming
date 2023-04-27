@@ -1,3 +1,5 @@
+
+// This class defines the stock model
 export class Stock {
     public favorite: boolean;
 

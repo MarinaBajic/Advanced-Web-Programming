@@ -29,3 +29,12 @@ quantity in the cart (this is related to product, so how much of each product is
 is already zero.
 
 Solutions of each homework will be posted after the next class. You can use the solutions to check your work. However, you should try to solve the problems on your own first. If you get stuck, feel free to contact me.
+
+### How to run angular projects?
+
+1. Clone this repository to your local machine.
+2. Make sure you followed all the instructions in `Exercises 4/angular_setup.md` to setup nvm, npm, node and angular cli.
+3. Open terminal and navigate to the root directory of angular project (e.g. `Exercises 4/stock-market`).
+4. Run `npm install` to install all dependencies.
+5. If you encounter any vulnerabilities, run `npm audit fix` to fix them.
+6. Run `ng serve` to start the server.

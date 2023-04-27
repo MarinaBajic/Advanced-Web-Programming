@@ -70,6 +70,10 @@ While the server is running the application will automatically reload if you cha
 
 If you want to stop the server press Ctrl+C in the terminal
 
+### Stopping Angular project
+
+To stop running Angular project press Ctrl+C in the terminal
+
 ## Creating Angular components
 
 In order to create new component called stock-item inside directory stock (which should be created inside app folder), go to root directory of project and run:
