@@ -1,0 +1,18 @@
+
+.product-item {
+    border: 1px solid black;
+    border-radius: 5px;
+    display: inline-block;
+    padding: 10px;
+    text-align: center;
+    margin: 20px;
+}
+
+.highlight {
+    background-color: lightseagreen;
+}
+
+.product-item__btn {
+    padding: 5px;
+    margin: 10px;
+}

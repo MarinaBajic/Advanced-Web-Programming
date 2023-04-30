@@ -1,0 +1,11 @@
+
+<div class="product-item" [class]="product.onSale ? 'highlight' : ''">
+    <img [src]="product.imageUrl" [alt]="product.name">
+    <h2>{{product.name}}</h2>
+    <p>{{product.price | currency: "USD"}}</p>
+    <div>
+        <button class="product-item__btn" (click)="increaseQuantity()">+</button>
+        <span>{{product.quantity}}</span>
+        <button class="product-item__btn" (click)="decreaseQuantity()" [disabled]="!canDecrease()">-</button>
+    </div>
+</div>

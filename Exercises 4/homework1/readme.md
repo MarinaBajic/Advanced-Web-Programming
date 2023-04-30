@@ -1,3 +1,5 @@
+### Homework 1
+
 For the first homework, try to accomplish the following:
 1. Start a new project to build an ecommerce website.
 2. Create a component to display a single product.

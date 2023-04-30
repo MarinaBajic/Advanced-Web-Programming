@@ -1,0 +1,4 @@
+<div class="container" *ngFor="let product of products; index as i">
+    <app-product [product]="product" (changeQuantity)="onChangeQuantity($event)"></app-product>
+</div>
+

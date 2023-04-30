@@ -1,0 +1,14 @@
+
+<div class="product-item" [ngClass]="productClasses">
+    <div><img [src]="product.imageUrl" alt=""></div>
+    <h3>{{product.name}}</h3>
+    <p [ngStyle]="productStyles">{{product.price | currency:"USD"}}</p>
+    <div>
+        <button class="product-item__btn" (click)="increaseQuantity()">+</button>
+        <span>{{product.quantity}}</span>
+        <button class="product-item__btn" (click)="decreaseQuantity()" *ngIf="product.quantity >= 1">-</button>
+    </div>
+</div>
+
+
+
