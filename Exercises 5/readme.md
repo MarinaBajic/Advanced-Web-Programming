@@ -20,3 +20,7 @@ Create new angular project which implements calculator with simple operations (+
 5. Component calculator should display result of expression. Display result in green color if expression was valid and in red color if expression was invalid. Except result value, also print which operation was used to calculate result (addition, subtraction, multiplication, division) - use ngSwitch directive to display operation name
 6. Style calculator and keyboard components with CSS using flexbox (see image below)
 
+
+
+https://user-images.githubusercontent.com/17954184/235434913-d97e1510-1cf9-4209-984e-84f47c70ed77.mp4
+
