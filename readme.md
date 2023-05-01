@@ -39,6 +39,16 @@ Setup instructions for installing and running angular can be found in the file `
 
 In this exercise we implemented a simple stock market application and demonstrated the use of components, data binding (text interpolation and property binding), event binding and pipes.
 
+In this exercises there is also homework assigned, which is to implement a simple e-commerce website (directory `Exercises 4/homework1`).
+
+### Exercises 5 - Angular Directives, Input and Output
+
+You can find implementation from exercises in the directory `Exercises 5/ecommerce`.
+
+In this exercises we modified the homework from last exercises (e-commerce website) and demonstrated the use of directives (ngIf, ngFor, ngClass, ngStyle), and input and output of components.
+
+In this exercises there is also homework assigned, which is to implement a simple calculator (directory `Exercises 5/homework2`).
+
 ## Contact
 For any questions, please contact me at: <dejan.gjer@dmi.uns.ac.rs>
 
