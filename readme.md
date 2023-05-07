@@ -41,7 +41,7 @@ In this exercise we implemented a simple stock market application and demonstrat
 
 In this exercises there is also homework assigned, which is to implement a simple e-commerce website (directory `Exercises 4/homework1`).
 
-### Exercises 5 - Angular Directives, Input and Output
+### Exercises 5 - Angular Directives, Input and Output, Content Projection
 
 You can find implementation from exercises in the directory `Exercises 5/ecommerce`.
 

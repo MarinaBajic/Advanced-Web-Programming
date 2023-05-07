@@ -3,7 +3,7 @@
 You can find implementation from exercises in the directory `Exercises 5/ecommerce`.
 Setup instructions for installing and running angular can be found in the file `Exercises 4/angular_setup.md`.
 
-In this exercise we started implementing e-commerce website (based on homework from previous exercise) and demonstrated the use of directives (ngIf, ngFor, ngClass, ngStyle), and input and output of components.
+In this exercise we started implementing e-commerce website (based on homework from previous exercise) and demonstrated the use of directives (ngIf, ngFor, ngClass, ngStyle),input and output of components and content (view) projection.
 
 ### E-commerce Website
 
@@ -17,6 +17,7 @@ initializing a single product in the ProductComponent. Change its template to us
 NgFor to create a ProductComponent for each product.
 4. Change the ProductComponent to take the product as an input.
 5. Move the increment/decrement logic from the ProductComponent to the ProductListComponent. Use a product ID to find the product and change its quantity.
+6. Add content (view) projection to the ProductComponent at pass to it paragraph at the bootom of each product card that tells what position in array of products each product have.
 
 
 ### Homework 2

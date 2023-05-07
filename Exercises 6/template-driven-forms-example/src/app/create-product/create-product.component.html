@@ -1,0 +1,68 @@
+
+<form (ngSubmit)="submit()">
+    <div class="product-name">
+        <input 
+            id="product-name"
+            type="text"
+            placeholder="test product"
+            name="productName"
+            [ngModel]="product.name"
+            (ngModelChange)="nameToUpper($event)"
+            required
+        >
+    </div>
+    <div class="product-image">
+        <input 
+            id="product-image"
+            type="text"
+            placeholder=""
+            name="productImage"
+            [(ngModel)]="product.imageUrl"
+        >
+    </div>
+    <div class="product-price">
+        <input 
+            id="product-price"
+            type="text"
+            placeholder=""
+            name="productPrice"
+            [(ngModel)]="product.price"
+        >
+    </div>
+    <div>
+        <div class="product-type">
+            <input 
+                type="radio"
+                name="productType"
+                value="New"
+                [(ngModel)]="product.type"
+            >New
+        </div>
+        <div class="product-type">
+            <input 
+                type="radio"
+                name="productType"
+                value="Used"
+                [(ngModel)]="product.type"
+            >Used
+        </div>
+        <div class="product-type">
+            <input 
+                type="radio"
+                name="productType"
+                value="Not used"
+                [(ngModel)]="product.type"
+            >Not used
+        </div>
+    </div>
+    <div class="product-confirm">
+        <input 
+            type="checkbox"
+            placeholder=""
+            name="productConfiermation"
+            [(ngModel)]="confirmed"
+        >Confirm that data that is provided is correct
+    </div>
+    <button (click)="reset()">Reset</button>
+    <button type="submit" [disabled]="!confirmed">Submit</button>
+</form>

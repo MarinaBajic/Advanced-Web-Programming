@@ -1,4 +1,6 @@
-<div class="container" *ngFor="let product of products">
-    <app-product [product]="product" (changeQuantity)="onChangeQuantity($event)"></app-product>
+<div class="container" *ngFor="let product of products; index as i">
+    <app-product [product]="product" (changeQuantity)="onChangeQuantity($event)">
+        <p>This is item nubmer {{i + 1}}</p>
+    </app-product>
 </div>
 
