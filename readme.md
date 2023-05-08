@@ -45,9 +45,16 @@ In this exercises there is also homework assigned, which is to implement a simpl
 
 You can find implementation from exercises in the directory `Exercises 5/ecommerce`.
 
-In this exercises we modified the homework from last exercises (e-commerce website) and demonstrated the use of directives (ngIf, ngFor, ngClass, ngStyle), and input and output of components.
+In this exercises we modified the homework from last exercises (e-commerce website) and demonstrated the use of directives (ngIf, ngFor, ngClass, ngStyle),input and output of components and content (view) projection.
 
 In this exercises there is also homework assigned, which is to implement a simple calculator (directory `Exercises 5/homework2`).
+
+### Exercises 6 - Using Bootstrap with Angular, Template Driven Forms
+
+You can find implementation from exercises in the directory `Exercises 6/ecommerce` and `Exercises 6/template-driven-forms-example`.
+Setup instructions for installing bootstrap in angular can be found in the file `Exercises 6/setup_bootstrap.md`.
+
+In this exercises first we continued working on ecommerce website from last exercises and demonstrated the use of bootstrap with angular (using bootstrap components in angular templates). After that we implemented a simple template driven form for adding new products to the website using ngModel directive.
 
 ## Contact
 For any questions, please contact me at: <dejan.gjer@dmi.uns.ac.rs>
