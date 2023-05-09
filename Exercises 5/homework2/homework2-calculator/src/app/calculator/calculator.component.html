@@ -1,0 +1,4 @@
+<p class="typed">{{text}}</p>
+<div class="keyboard">
+    <button *ngFor="let tile of tiles; index as i" class="tile" [class]="{'tile-color': colorTile(i)}" (click)="tilePress(tile)">{{tile}}</button>
+</div>

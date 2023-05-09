@@ -1,0 +1,9 @@
+<app-calculator (result)="receiveResult($event)"></app-calculator>
+<hr>
+<div class="result" *ngIf="received" [ngSwitch]="result.operation">
+    <p [ngClass]="resultClasses" *ngSwitchCase="'+'">= {{result.result}} (addition)</p>
+    <p [ngClass]="resultClasses" *ngSwitchCase="'-'">= {{result.result}} (subtraction)</p>
+    <p [ngClass]="resultClasses" *ngSwitchCase="'*'">= {{result.result}} (multiplication)</p>
+    <p [ngClass]="resultClasses" *ngSwitchCase="'/'">= {{result.result}} (division)</p>
+    <p [ngClass]="resultClasses" *ngSwitchDefault>Undefined operation!</p>
+</div>  

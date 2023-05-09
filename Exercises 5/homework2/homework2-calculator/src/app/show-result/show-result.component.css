@@ -1,0 +1,15 @@
+
+.result {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.success {
+    color: green;
+}
+
+.error {
+    color: red;
+}

@@ -1,0 +1,33 @@
+
+.typed {
+    height: 3rem;
+    font-size: 2rem;
+    text-align: left;
+    padding: 1rem;
+    border: 1px solid black;
+    margin-bottom: 1rem;
+}
+
+.keyboard {
+    max-width: 28rem;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.tile {
+    width: 7rem;
+    height: 7rem;
+    border: 1px solid black;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 2rem;
+    flex: 1 0 25%;
+}
+
+.tile-color {
+    background-color: lightseagreen;
+}
