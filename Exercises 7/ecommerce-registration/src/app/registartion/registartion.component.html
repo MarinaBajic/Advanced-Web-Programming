@@ -1,0 +1,205 @@
+<h2 class="text-center m-5">Register to e-commerce website</h2>
+
+<div class="container">
+    <div class="row m-3">
+        <div class="col-3"></div>
+        <div class="col-6">
+            <form [ngClass]="form_classes" (ngSubmit)="onSubmit(registrationForm)" #registrationForm="ngForm">
+                <div class="mb-3">
+                    <label for="exampleInputUsername1" class="form-label">Username</label>
+                    <input type="text" 
+                        class="form-control" 
+                        id="exampleInputUsername1"
+                        name="username"
+                        ngModel
+                        #username="ngModel"
+                        required
+                    >
+                    <div class="invalid-feedback">
+                        Please choose a username.
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Password</label>
+                    <input type="password" 
+                        class="form-control" 
+                        id="exampleInputPassword1"
+                        name="password"
+                        required
+                        pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])[a-zA-Z0-9]{6,}"
+                        ngModel
+                        #password1="ngModel">
+                    <div id="passwordHelp" class="form-text">Password needs to connsist of only letters and numbers (at least one small, big letter and number) - at least 6 characters long</div>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputPassword2" class="form-label">Confirm Password</label>
+                    <input type="password" 
+                        class="form-control" 
+                        id="exampleInputPassword2"
+                        name="passwordConfirm"
+                        required
+                        pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])[a-zA-Z0-9]{6,}"
+                        ngModel
+                        #password2="ngModel">
+                    <div class="password-valid-feedback" *ngIf="password2.touched && password1.value === password2.value">
+                        Passwords match!
+                    </div>
+                    <div class="password-invalid-feedback" *ngIf="password2.touched && password1.value !== password2.value">
+                        Passwords do not match!
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Email address</label>
+                    <input 
+                        type="email" 
+                        class="form-control"
+                        id="exampleInputEmail1" 
+                        aria-describedby="emailHelp" 
+                        name="email"
+                        email
+                        required
+                        ngModel>
+                    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                </div>
+                <div class="mb-3 form-check">
+                  <input 
+                    type="checkbox" 
+                    class="form-check-input"
+                    id="exampleCheck1"
+                    name="newsletter"
+                    ngModel 
+                    checked>
+                  <label class="form-check-label" for="exampleCheck1">Subscribe for newsletter!</label>
+                </div>
+
+                <div class="mb-3">
+                    <h4>User type:</h4>
+                    <div class="form-check">
+                        <input 
+                            class="form-check-input"
+                            type="radio"
+                            name="userType" 
+                            id="flexRadioDefault1"
+                            value="person"
+                            [ngModel]="defaultUserType"
+                            checked>
+                        <label class="form-check-label" for="flexRadioDefault1">
+                        Person
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input 
+                            class="form-check-input"
+                            type="radio"
+                            name="userType" 
+                            id="flexRadioDefault2"
+                            value="company"
+                            [ngModel]="defaultUserType"
+                            required>
+                        <label class="form-check-label" for="flexRadioDefault2">
+                        Company
+                        </label>
+                    </div>
+                </div>
+
+                <div class="mb-3">
+                    <label for="exampleTelephone" class="form-label">Telephone</label>
+                    <input type="text" 
+                        class="form-control" 
+                        id="exampleTelephone"
+                        name="telephone"
+                        pattern="[0-9]{7,}"
+                        ngModel>
+                    <div id="telephoneHelp" class="form-text">This field is not required.</div>
+                </div>
+                
+                <div class="input-group mb-3" ngModelGroup="personData" *ngIf="registrationForm.form.value.userType === 'person'">
+                    <div class="mb-3 me-3">
+                        <label for="exampleFirstName" class="form-label">Firstname</label>
+                        <input type="text" 
+                            class="form-control" 
+                            id="exampleFirstName"
+                            name="firstname"
+                            required
+                            ngModel>
+                    </div>
+                    <div class="mb-3 me-3">
+                        <label for="exampleLastName" class="form-label">Lastname</label>
+                        <input type="text" 
+                            class="form-control" 
+                            id="exampleLastName"
+                            name="lastname"
+                            required
+                            ngModel>
+                    </div>
+                </div>
+
+                <div class="input-group mb-3" ngModelGroup="companyData" *ngIf="registrationForm.form.value.userType === 'company'">
+                    <div class="mb-3 me-3">
+                        <label for="exampleName" class="form-label">Name</label>
+                        <input type="text" 
+                            class="form-control" 
+                            id="exampleName"
+                            name="companyName"
+                            required
+                            ngModel>
+                    </div>
+                    <div class="mb-3 me-3">
+                        <label for="exampleYear" class="form-label">Foundation Year</label>
+                        <input type="number" 
+                            class="form-control" 
+                            id="exampleYear"
+                            name="companyYear"
+                            required
+                            ngModel>
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <h4>Address</h4>
+                    <div class="row mb-3" ngModelGroup="address">
+                        <div class="col-md-6">
+                            <label for="inputCity" class="form-label">City</label>
+                            <input 
+                                type="text" 
+                                class="form-control" 
+                                id="inputCity"
+                                name="city"
+                                ngModel
+                                required>
+                          </div>
+                          <div class="col-md-4">
+                            <label for="inputState" class="form-label">State</label>
+                            <select 
+                                id="inputState" 
+                                class="form-select"
+                                name="country"
+                                ngModel
+                                >
+                              <option *ngFor="let country of countries" [value]="country">{{country}}</option>
+                            </select>
+                          </div>
+                          <div class="col-md-2">
+                            <label for="inputZip" class="form-label">Zip</label>
+                            <input 
+                                type="number" 
+                                class="form-control"
+                                id="inputZip"
+                                name="zip"
+                                ngModel
+                                required>
+                          </div>
+                    </div>
+                </div>
+                
+                <div class="buttons mt-3">
+                    <button type="submit" class="btn btn-primary me-3">Submit</button>
+                <button type="reset" class="btn btn-secondary" (click)="onReset(registrationForm)">Reset</button>
+                </div>
+                
+            </form>
+        </div>
+        <div class="col-3"></div>
+    </div>
+    
+</div>
