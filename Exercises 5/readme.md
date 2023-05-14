@@ -36,7 +36,7 @@ Create new angular project which implements calculator with simple operations (+
 https://user-images.githubusercontent.com/17954184/235434913-d97e1510-1cf9-4209-984e-84f47c70ed77.mp4
 
 
-## How to run angular projects?
+### How to run angular projects?
 
 1. Clone this repository to your local machine.
 2. Make sure you followed all the instructions in `Exercises 4/angular_setup.md` to setup nvm, npm, node and angular cli.

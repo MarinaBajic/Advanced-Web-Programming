@@ -25,6 +25,16 @@ In this project we build very simple example of template driven form to demonstr
 
 - Use state of form css classes to color inputs in green if they are valid and red if they are invalid. Let first user to change the value of the inputs and then display red color if the input is invalid.
 
+### How to run angular projects?
+
+1. Clone this repository to your local machine.
+2. Make sure you followed all the instructions in `Exercises 4/angular_setup.md` to setup nvm, npm, node and angular cli.
+3. Open terminal and navigate to the root directory of angular project (e.g. `Exercises 4/stock-market`).
+4. Run `npm install` to install all dependencies.
+5. If you encounter any vulnerabilities, run `npm audit fix` to fix them.
+6. Run `ng serve` to start the server.
+
+
 
 
 

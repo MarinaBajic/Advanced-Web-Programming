@@ -56,6 +56,12 @@ Setup instructions for installing bootstrap in angular can be found in the file 
 
 In this exercises first we continued working on ecommerce website from last exercises and demonstrated the use of bootstrap with angular (using bootstrap components in angular templates). After that we implemented a simple template driven form for adding new products to the website using ngModel directive.
 
+### Exercises 7 - Template Driven Forms (continued), Bootstrap Forms
+
+You can find implementation from exercises in the directory `Exercises 7/ecommerce-registration`.
+
+In this exercises we created more advanced template-driven form for user registration on ecommerce website. We demonstrated use of ngForm, ngModelGroup, ngModel directives for work with forms, groups and controls. Beside that we also used template reference variables and html pattern validation with regex expressions. We also demonstrated use of bootstrap forms and validation classes.
+
 ## Contact
 For any questions, please contact me at: <dejan.gjer@dmi.uns.ac.rs>
 
