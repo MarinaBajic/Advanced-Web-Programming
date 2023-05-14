@@ -88,7 +88,7 @@ ng help
 ng version
 ```
 
-## Creating Angular project
+### Creating Angular project
 
 Run command below to create new angular project (stock-market example).
 
