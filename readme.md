@@ -62,6 +62,8 @@ You can find implementation from exercises in the directory `Exercises 7/ecommer
 
 In this exercises we created more advanced template-driven form for user registration on ecommerce website. We demonstrated use of ngForm, ngModelGroup, ngModel directives for work with forms, groups and controls. Beside that we also used template reference variables and html pattern validation with regex expressions. We also demonstrated use of bootstrap forms and validation classes.
 
+In this exercises there is also homework assigned, which is to implement template driven form for adding new products in ecommerce website (directory `Exercises 7/homework3`).
+
 ## Contact
 For any questions, please contact me at: <dejan.gjer@dmi.uns.ac.rs>
 
