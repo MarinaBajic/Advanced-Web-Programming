@@ -18,6 +18,10 @@ ing through ngModel. Make all inputs belong to one form group (product) and on s
 6. Use bootstrap to style form and show validation errors after submit.
 You can see demo of the project below.
 
+
+https://github.com/DejanGjer/Advanced-Web-Programming/assets/17954184/f34f17a4-6624-4d60-92ac-b8352e778fe2
+
+
 ### How to run angular projects?
 
 1. Clone this repository to your local machine.
