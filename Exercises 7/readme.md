@@ -6,7 +6,7 @@ In this exercises we created more advanced template-driven form for user registr
 
 ### Homework 3
 
-Create form for adding new products in ecommerce website using form groups (ngFrom approach). You do not need to use bootstrap for this homework.
+Create form for adding new products in ecommerce website using form groups (ngFrom approach).
 
 1. Create a new component that allows us to add new products.
 2. Create a form that takes in the product name, price, image URL, and whether or
