@@ -1,0 +1,74 @@
+
+<div class="container">
+  <h1 class="text-center m-4">Login</h1>
+  <div class="row">
+    <div class="col-3"></div>
+    <div class="col-6">
+      <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Email address</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" formControlName="email">
+          <div *ngIf="!email?.valid && email?.touched">
+            <div class="form-text" *ngIf="email?.errors?.['required']">
+              Email address is required!
+            </div>
+            <div class="form-text" *ngIf="email?.errors?.['email']">
+              Email address is not valid!
+            </div>
+          </div>
+        </div>
+        <div formGroupName="profileData">
+          <div class="mb-3">
+            <label for="usernameInput" class="form-label">Username</label>
+            <input type="text" class="form-control" id="usernameInput" formControlName="username">
+            <div class="form-text" *ngIf="!username?.valid && username?.touched">
+              <div class="form-text" *ngIf="username?.errors?.['required']">
+                Username is required!
+              </div>
+              <div class="form-text" *ngIf="username?.errors?.['forbiddenUsername']">
+                This username is forbidden!
+              </div>
+            </div>
+          </div>
+          <div class="mb-3">
+            <label for="passwordInput" class="form-label">Password</label>
+            <input type="password" class="form-control" id="passwordInput" formControlName="password">
+            <div class="form-text" *ngIf="!password?.valid && password?.touched">
+              Please enter password.
+            </div>
+          </div>
+        </div>
+        <div>
+          <h4>Account type</h4>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" value="Personal" formControlName="accountType">
+            <label class="form-check-label">
+              Personal account
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" value="Bussiness" formControlName="accountType">
+            <label class="form-check-label">
+              Bussiness account
+            </label>
+          </div>
+        </div>
+        <div class="mt-3 mb-3" formArrayName="codes">
+          <h4 class="mb-3">Validation Codes</h4>
+          <button type="button" class="btn btn-success" (click)="onAddCode()">Add Validation Code</button>
+          <div class="mt-3" *ngFor="let code of codes.controls; let i = index">
+            <label class="form-label">Code {{i+1}}</label>
+            <input type="text" class="form-control" [formControlName]="i">
+          </div>
+        </div>
+        <div class="form-text mt-3 fs-5" *ngIf="!loginForm.valid && loginForm.touched">
+          Please correct errors!
+        </div>
+        <button class="btn btn-primary mt-3" type="submit">Submit</button>
+      </form>
+      <p *ngIf="submitted" class="m-4">Form values: {{loginForm.value | json}}</p>
+    </div>
+    <div class="col-3"></div>
+  </div>
+
+</div>
