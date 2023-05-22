@@ -64,6 +64,14 @@ In this exercises we created more advanced template-driven form for user registr
 
 In this exercises there is also homework assigned, which is to implement template driven form for adding new products in ecommerce website (directory `Exercises 7/homework3`).
 
+## Exercises 8 - Reactive Forms
+
+You can find implementation from exercises in the directory `Exercises 8/reactive-forms`.
+
+In this exercises we created reactive form for user login on ecommerce website. We demonstrated use of FormControl, FormGroup, FormArray and FormBuilder classes for work with forms, groups and controls. Beside that we also covered built-in and custom validators and error codes. We used bootsrap for styling of the page.
+
+In this exercises there is also homework assigned, which is to implement template driven form for adding new products in ecommerce website (directory `Exercises 8/homework4`).
+
 ## Contact
 For any questions, please contact me at: <dejan.gjer@dmi.uns.ac.rs>
 
