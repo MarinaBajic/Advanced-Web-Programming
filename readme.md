@@ -64,7 +64,7 @@ In this exercises we created more advanced template-driven form for user registr
 
 In this exercises there is also homework assigned, which is to implement template driven form for adding new products in ecommerce website (directory `Exercises 7/homework3`).
 
-## Exercises 8 - Reactive Forms
+### Exercises 8 - Reactive Forms
 
 You can find implementation from exercises in the directory `Exercises 8/reactive-forms`.
 
