@@ -72,6 +72,20 @@ In this exercises we created reactive form for user login on ecommerce website. 
 
 In this exercises there is also homework assigned, which is to implement template driven form for adding new products in ecommerce website (directory `Exercises 8/homework4`).
 
+### Exercises 9 - Services and Observables
+
+You can find implementation from exercises in the directories `Exercises 9/ecommerce-services` and `Exercises 9/ecommerce-observables`.
+This exercises had starter code (base code for application that we created in class) in `Exercises 9/ecommerce-starter` directory.
+
+In this exercises we created services for work with products and users on ecommerce website. We demonstrated use of services for separation of concerns and use of observables for asynchronous operations.
+
+### Exercises 10 - Http Requests and Routing
+
+You can find implementation from exercises in the directories `Exercises 9/ecommerce-http` and `Exercises 9/ecommerce-routing`.
+This exercises as a base code use code from last exercises (`Exercises 9/ecommerce-observables` project).
+
+In this exercises we we continued to build ecommerce application from last exercies. This time we added routing and demonstrated use of http requests for communication with backend.
+
 ## Contact
 For any questions, please contact me at: <dejan.gjer@dmi.uns.ac.rs>
 

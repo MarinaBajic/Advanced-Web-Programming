@@ -8,6 +8,8 @@ In this file you will find all instrunctions to setup all tools needed for the c
 4. Angular
 5. Bootstrap
 
+Additionally if you need to use a server for your project you will need follow the instructions in the last section of this file.
+
 ## Installing nvm
 
 First we need to install nvm (Node Version Manager). For Linux systems follow instrunctions below. For Windows and Mac systems follow [this link](https://www.freecodecamp.org/news/node-version-manager-nvm-install-guide/)
@@ -161,6 +163,45 @@ Now, open the `angular.json` file and add Bootstrap CSS and JS files in the `sty
 ]
 ```
 Now you should be able to use Bootstrap 5 within any component of your Angular project.
+
+## Node.js Server setup to use in Angular project
+
+### How to run Node.js server
+
+First cd into the server directory. Then you need to install all the dependencies that server requires. To do that run the following command:
+
+```bash
+npm install
+```
+
+Then run the following command:
+
+```bash
+node server.js
+```
+
+Server will also console log the port it is running on. By default it is 3000.
+
+### How to setup Angular project to use Node.js server
+
+In order to connect Angular app and running Node.js server first you need to add proxy.conf.json file into the root of the Angular project. The content of the file should be:
+
+```json
+{
+    "/api": {
+      "target": "http://localhost:3000",
+      "secure": false
+    }
+}
+```
+
+Now when you are running the Angular app with `ng serve` command you need to pass the proxy configuration file to it. To do that run the following command:
+
+```bash
+ng serve --proxy-config proxy.conf.json
+```
+
+
 
 
 

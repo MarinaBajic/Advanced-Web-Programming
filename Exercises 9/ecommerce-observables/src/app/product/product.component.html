@@ -1,0 +1,18 @@
+
+<div class="product-item card text-center p-3" style="width: 17rem;" [ngClass]="productClasses">
+    <img class="card-img-top my-3" [src]="product.imageUrl" alt="">
+    
+    <div class="card-body">
+        <h5 class="card-title">{{product.name}}</h5>
+        <p class="card-text" [ngStyle]="productStyles">{{product.price | currency:"USD"}}</p>
+        <div>
+            <button class="product-item__btn btn btn-primary" (click)="increaseQuantity()">+</button>
+            <span>{{product.quantity}}</span>
+            <button class="product-item__btn btn btn-primary" (click)="decreaseQuantity()" *ngIf="product.quantity >= 1">-</button>
+        </div>
+    </div>
+    
+</div>
+
+
+
